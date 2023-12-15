@@ -1,3 +1,6 @@
+import 'package:actual/common/component/custom_text_form_field.dart';
+import 'package:actual/common/const/colors.dart';
+import 'package:actual/user/view/login_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -12,11 +15,10 @@ class _App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(
-        body: Container(
-          color: Colors.red,
-        ),
-      )
+      theme: ThemeData(
+        fontFamily: 'NotoSans'
+      ),
+      home: LoginScreen(),
     );
   }
 }
